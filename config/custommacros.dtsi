@@ -4,3 +4,73 @@
     #binding-cells = <0>;
     bindings = <&kp LG(SPACE)>;
   };
+
+  rec: rec {
+    compatible = "zmk,behavior-macro";
+    label = "rec";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LS(N5))>;
+  };
+
+  snap: snap {
+    compatible = "zmk,behavior-macro";
+    label = "snap";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LS(N4))>;
+  };
+
+  tabl: tabl {
+    compatible = "zmk,behavior-macro";
+    label = "tabl";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LS(LBRC))>;
+  };
+
+  tabr: tabr {
+    compatible = "zmk,behavior-macro";
+    label = "tabr";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LS(RBRC))>;
+  };
+
+  pgl: pgl {
+    compatible = "zmk,behavior-macro";
+    label = "pgl";
+    #binding-cells = <0>;
+    bindings = <&kp LG(LBRC)>;
+  };
+
+  pgr: pgr {
+    compatible = "zmk,behavior-macro";
+    label = "pgr";
+    #binding-cells = <0>;
+    bindings = <&kp LG(RBRC)>;
+  };
+
+  dktpl: dktpl {
+    compatible = "zmk,behavior-macro";
+    label = "dktpl";
+    #binding-cells = <0>;
+    bindings = <&kp LC(LEFT)>;
+  };
+
+  dktpr: dktpr {
+    compatible = "zmk,behavior-macro";
+    label = "dktpr";
+    #binding-cells = <0>;
+    bindings = <&kp LC(RIGHT)>;
+  };
+
+  dktpu: dktpu {
+    compatible = "zmk,behavior-macro";
+    label = "dktpu";
+    #binding-cells = <0>;
+    bindings = <&kp LC(UP)>;
+  };
+
+  dktpd: dktpd {
+    compatible = "zmk,behavior-macro";
+    label = "dktpd";
+    #binding-cells = <0>;
+    bindings = <&kp LC(DOWN)>;
+  };
