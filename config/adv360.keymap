@@ -11,6 +11,35 @@
 #define LWR     4
 
 
+#define KC_RCPP LGUI(LSFT(KC_5))        // Record portion of screen
+#define KC_CAPP LGUI(LSFT(KC_4))        // Capture portion of screen
+
+#define KC_STL LGUI(LSFT(KC_LBRC))      // Switch tab left
+#define KC_STR LGUI(LSFT(KC_RBRC))      // Switch tab right
+
+#define SSL LCTL(KC_LEFT)            // Switch screen left
+#define SSR LCTL(KC_RIGHT)           // Switch screen right
+
+#define KC_SU LCTL(KC_UP)		            // Show all screens
+#define KC_SD LCTL(KC_DOWN)		          // Collapse screen
+#define KC_SHDT LGUI(KC_F3)             // Show Desktop
+
+#define KC_PB LGUI(KC_LBRC)             // Page back
+#define KC_PF LGUI(KC_RBRC)             // Page forward
+
+#define KC_SF LGUI(KC_GRV)              // Switch browser focus
+
+#define KC_X0 MT(MOD_LCTL, KC_ESC)      // Toggle CTRL/Esc
+#define KC_XSP MT(MOD_LCTL, KC_SPC)    // Toggle CTRL/Space
+#define KC_XBS MT(MOD_LSFT, KC_BSPC)    // Toggle CTRL/Backspace
+#define KC_X4 MT(MOD_LSFT, KC_ENT)      // Toggle Shift/Enter
+
+#define KC_SPLT LGUI(KC_SPC)            // Alt spotlight/alfred
+#define KC_DEVT LGUI(LALT(KC_J))        // Toggle Dev Tools
+
+#define KC_DW LALT(KC_BSPC)             // Delete word
+#define KC_UNSC LSFT(KC_MINS)           // Underscore
+
 
 / {
     behaviors {
@@ -41,7 +70,7 @@
       >;
     };
     KYPD {
-      bindings = <
+      bindings = <           
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                       &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
@@ -71,7 +100,7 @@
       bindings = <
         &none &bt BT_SEL 0 &bt BT_SEL KYPD &bt BT_SEL FN &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                                          &trans                 &bt BT_SEL 0 &bt BT_SEL KYPD &bt BT_SEL FN &bt BT_SEL 3 &bt BT_SEL 4 &none
         &none &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &none        &none        &none        &none        &none
-        &sptlght &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
+        &sptlght &none        &none     &kp SSL      &kp SSR        &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
         &none &none        &none        &none        &none        &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &none        &none        &none        &none        &none
         &none &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
       >;
