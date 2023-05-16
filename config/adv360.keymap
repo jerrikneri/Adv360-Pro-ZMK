@@ -72,7 +72,7 @@
         &none    &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &kp N7       &kp N8       &kp N9        &none               &none
         &sptlght &snap        &rec         &dktpl       &dktpr       &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &kp N4       &kp N5       &kp N6        &tabr               &none
         &trans   &none        &none        &dktpu       &dktpd       &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &kp N1       &kp N2       &kp N3        &pgr                &trans        
-        &none    &none        &none        &none        $none                                            &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &none        &none        &kp LBKT      &kp RBKT            &none
+        &none    &none        &none        &none        &none                                            &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &none        &none        &kp LBKT      &kp RBKT            &none
       >;
     };
     RSE {
@@ -81,7 +81,7 @@
         &none    &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &kp N7       &kp N8       &kp N9        &none               &none
         &sptlght &snap        &rec         &dktpl       &dktpr       &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &kp N4       &kp N5       &kp N6        &tabr               &none
         &trans   &none        &none        &dktpu       &dktpd       &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &kp N1       &kp N2       &kp N3        &pgr                &trans        
-        &none    &none        &none        &none        $none                                            &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &none        &none        &kp LPAR      &kp RPAR            &none
+        &none    &none        &none        &none        &none                                            &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &none        &none        &kp LPAR      &kp RPAR            &none
       >;
     };
   };
