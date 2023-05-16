@@ -9,6 +9,7 @@
 #define FN      2
 #define MOD     3
 #define LWR     4
+#define RSE     5
 
 / {
     behaviors {
@@ -35,7 +36,7 @@
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &hm LCTL ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LGUI &kp LALT &none &none &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &hm RSHFT ENTER
-        &mo FN    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &mo LWR  &kp SPACE   &kp END              &kp PG_DN &kp BSPC &kp ENTER               &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
+        &mo FN    &kp GRAVE &kp CAPS &kp LBKT &kp RBKT               &mo LWR  &kp SPACE   &kp END              &kp PG_DN &kp BSPC &kp RSE               &kp LEFT &kp DOWN  &kp UP &kp RIGHT &mo FN
       >;
     };
     KYPD {
@@ -68,11 +69,21 @@
     LWR {
       bindings = <
         &none    &bt BT_SEL 0 &bt BT_SEL KYPD &bt BT_SEL FN &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                                          &trans                 &bt BT_SEL 0 &bt BT_SEL KYPD &bt BT_SEL FN &bt BT_SEL 3 &bt BT_SEL 4 &none
-        &none    &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &none        &none        &none        &none        &none
-        &sptlght &snap        &rec         &dktpl       &dktpr       &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &tabl        &tabr
-        &none    &none        &none        &dktpu       &dktpd       &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &none        &none        &none        &pgl         &pgr 
-        &none    &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
+        &none    &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &kp N7       &kp N8       &kp N9        &none               &none
+        &sptlght &snap        &rec         &dktpl       &dktpr       &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &kp N4       &kp N5       &kp N6        &tabr               &none
+        &none    &none        &none        &dktpu       &dktpd       &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &kp N1       &kp N2       &kp N3        &pgr                &none        
+        &none    &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &kp LBKT      &kp RBRC            &none
+      >;
+    };
+    RSE {
+      bindings = <
+        &none    &bt BT_SEL 0 &bt BT_SEL KYPD &bt BT_SEL FN &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                                          &trans                 &bt BT_SEL 0 &bt BT_SEL KYPD &bt BT_SEL FN &bt BT_SEL 3 &bt BT_SEL 4 &none
+        &none    &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &kp N7       &kp N8       &kp N9        &none               &none
+        &sptlght &snap        &rec         &dktpl       &dktpr       &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &kp N4       &kp N5       &kp N6        &tabr               &none
+        &none    &none        &none        &dktpu       &dktpd       &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &kp N1       &kp N2       &kp N3        &pgr                &none        
+        &none    &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &kp LPAR      &kp RPAR            &none
       >;
     };
   };
 };
+
