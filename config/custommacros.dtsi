@@ -61,13 +61,6 @@
     bindings = <&kp LC(RIGHT)>;
   };
 
-  dktpu: dktpu {
-    compatible = "zmk,behavior-macro";
-    label = "dktpu";
-    #binding-cells = <0>;
-    bindings = <&kp LC(UP)>;
-  };
-
   dktpd: dktpd {
     compatible = "zmk,behavior-macro";
     label = "dktpd";
@@ -87,4 +80,11 @@
     label = "devt";
     #binding-cells = <0>;
     bindings = <&kp LG(LA(J))>;
+  };
+
+  swfs: swfs {
+    compatible = "zmk,behavior-macro";
+    label = "swfs";
+    #binding-cells = <0>;
+    bindings = <&kp LG(GRAVE)>;
   };
