@@ -37,14 +37,14 @@
     compatible = "zmk,behavior-macro";
     label = "pgl";
     #binding-cells = <0>;
-    bindings = <&kp LG(LBRC)>;
+    bindings = <&kp LG(LBKT)>;
   };
 
   pgr: pgr {
     compatible = "zmk,behavior-macro";
     label = "pgr";
     #binding-cells = <0>;
-    bindings = <&kp LG(RBRC)>;
+    bindings = <&kp LG(RBKT)>;
   };
 
   dktpl: dktpl {
@@ -61,11 +61,11 @@
     bindings = <&kp LC(RIGHT)>;
   };
 
-  dktpd: dktpd {
+  dktpu: dktpu {
     compatible = "zmk,behavior-macro";
-    label = "dktpd";
+    label = "dktpu";
     #binding-cells = <0>;
-    bindings = <&kp LC(DOWN)>;
+    bindings = <&kp LC(UP)>;
   };
 
   dktp: dktp {

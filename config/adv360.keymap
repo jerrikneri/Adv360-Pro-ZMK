@@ -32,7 +32,7 @@
 
     default_layer {
       bindings = <
-        &tog KYPD    &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &none                                                                        &mo 3     &kp N6 &kp N7   &kp N8    &kp N9   &kp N0    &kp MINUS
+        &tog KYPD    &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &mo 3                                                                        &mo 3     &kp N6 &kp N7   &kp N8    &kp N9   &kp N0    &kp MINUS
         &kp TAB      &kp Q     &kp W    &kp E    &kp R      &kp T  &kp HOME                                                                     &kp PG_UP &kp Y  &kp U    &kp I     &kp O    &kp P     &kp BSLH
         &hm LCTL ESC &kp A     &kp S    &kp D    &kp F      &kp G  &kp END           &kp LGUI &kp LALT &none &none &kp LGUI  &kp LCTRL          &kp PG_DN &kp H  &kp J    &kp K     &kp L    &kp SEMI  &kp SQT
         &kp LSHFT    &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none               &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH  &hm RSHFT ENTER
@@ -71,7 +71,7 @@
         &none    &none        &none        &none        &none        &none        &none                                                                                                                &trans           &none        &none        &none        &none         &none               &none
         &none    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &none                                                                                                                &none            &kp N6       &kp N7       &kp N8       &kp N9        &kp N0              &none
         &sptlght &snap        &rec         &dktpl       &dktpr       &none        &none                 &none &none &none &none &none &none                                                            &none            &none        &kp N4       &kp N5       &kp N6        &tabr               &none
-        &trans   &devt        &none        &dktpd       &dktp        &none                        &none &none &none &none &none &none &none &none                                                                       &none        &kp N1       &kp N2       &kp N3        &pgr                &trans        
+        &trans   &devt        &none        &dktpu       &dktp        &none                        &none &none &none &none &none &none &none &none                                                                       &none        &kp N1       &kp N2       &kp N3        &pgr                &trans        
         &none    &none        &none        &none        &none                                     &none &none &none             &none &kp KP_ENTER &none                                                                                &kp N0       &kp N0       &kp KP_DOT    &kp EQUAL           &none
       >;
     };
