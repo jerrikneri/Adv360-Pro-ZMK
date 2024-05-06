@@ -49,15 +49,6 @@
         &mo FN     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo FN
       >;
     };
-    NAV {
-      bindings = <           
-        &tog NAV   &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                        &mo 3 &kp N6    &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB    &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                         &none &kp HOME  &kp KP_N7  &kp UP       &kp KP_N9     &kp PG_UP       &kp BSLH
-        &kp ESC    &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL            &none &kp END   &kp LEFT   &kp DOWN     &kp RIGHT     &kp PG_DN       &kp SQT
-        &kp LSHFT  &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none            &kp N     &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo FN     &kp GRAVE &kp CAPS &kp LALT &kp LGUI                &kp BSPC &kp DEL   &kp END              &kp PG_DN &trans &kp KP_N0                      &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo FN
-      >;
-    };
     fn {
       bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog KYPD                                                       &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
@@ -69,7 +60,7 @@
     };
     mod {
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL KYPD &bt BT_SEL FN &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                                                          &trans                 &bt BT_SEL 0 &bt BT_SEL KYPD &bt BT_SEL FN &bt BT_SEL 3 &bt BT_SEL 4 &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &none                                                                                                          &trans          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
         &none &none        &none        &none        &none        &none        &bootloader                                                                                                    &bootloader            &none        &none        &none        &none        &none        &none
         &none &none        &none        &none        &none        &none        &rgb_ug RGB_MEFS_CMD 5                 &bt BT_CLR &bt BT_CLR &none &none &bt BT_CLR &bt BT_CLR                 &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none        &none        &none
         &none &none        &none        &none        &none        &none                               &none           &none      &none      &none &none &none      &none      &none                                  &none        &none        &none        &none        &none        &none
@@ -92,6 +83,15 @@
         &sptlght &snap        &rec         &dktpl       &dktpr       &none        &none                 &none &none &none &none &none &none                                                            &none            &kp EQUAL    &kp EQUAL    &kp MINUS    &tabl         &tabr               &none
         &trans   &none        &none        &dktpu       &dktp       &none                         &none &none &none &none &none &none &none &none                                                                       &kp KP_PLUS  &kp KP_PLUS  &swfs        &pgl          &pgr                &kp ENTER        
         &none    &none        &none        &none        &none                                     &none &none &none             &none &none &none                                                                                    &none        &none        &none         &none               &none
+      >;
+    };
+    NAV {
+      bindings = <           
+        &tog NAV   &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                        &mo 3 &kp N6    &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+        &kp TAB    &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                         &none &kp HOME  &kp KP_N7  &kp UP       &kp KP_N9     &kp PG_UP       &kp BSLH
+        &kp ESC    &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL            &none &kp END   &kp LEFT   &kp DOWN     &kp RIGHT     &kp PG_DN       &kp SQT
+        &kp LSHFT  &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none            &kp N     &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
+        &mo FN     &kp GRAVE &kp CAPS &kp LALT &kp LGUI                &kp BSPC &kp DEL   &kp END              &kp PG_DN &trans &kp KP_N0                      &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo FN
       >;
     };
   };
